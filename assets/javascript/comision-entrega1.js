@@ -1,4 +1,4 @@
-debugger
+/* debugger
 
 //Saludo bienvenida 
 
@@ -22,4 +22,4 @@ if (ventas >= 5){
 }
 else if (ventas < 5){
     console.log("Tu comisión es de 5%")
-}
+} */
