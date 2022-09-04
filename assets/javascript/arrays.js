@@ -7,8 +7,9 @@ let pc = {
     espacio : "1TB",
 };
 
-pc = ["nombre", "procesador", "ram", "espacio"];
+let nombre = ["nombre"];
+let procesador = ["procesador"];
+let ram = ["ram"];
+let espacio = ["espacio"];
 
-document.write (pc [prompt("Informacion a saber de la pc")]);
-
-console.log (pc);
+document.write (pc[prompt("datos de mi pc (nombre, procesador, ram y espacio")]);
