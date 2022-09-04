@@ -1,27 +1,25 @@
-// calculadora porcentaje de comision 
-
 debugger
 
 //Saludo bienvenida 
 
 let nombreCompleto = prompt ("Ingrese su nombre completo, por favor:");
-alert ("Bienvenido a la calculadora de porcentaje por comisión, " + nombreCompleto);
+alert ("Bienvenido, " + nombreCompleto);
 
 //informacion de usuario
 
-function datosIngresados(){
-    let numero = parseFloat(prompt("Ingrese el monto total:"));
-    let porcentaje= parseFloat(prompt ("Ingrese el porcentaje:"));
-    let resultado = (numero * porcentaje / 100);
+let ventas = parseInt(prompt ("¿Cuantos productos vendiste?"))
+let precioTotal = 0 ;
 
-    console.log("Resultado: "+ resultado);
+for (let i = 1; i <= ventas; i++){
+    let precio = parseInt(prompt("¿Cuanto salio el producto? " + i));
+    console.log("El producto " + i + " salio " + precio)
+    precioTotal += precio;
+    console.log("El precio total es de " + precioTotal)
 }
 
-datosIngresados();
-
-let numeroDeVentas= prompt("Número de ventas en el dia:");
-let comisionPorVenta= 10;
-
-for {
-    if()
+if (ventas >= 5){
+    console.log("Tu comisión es del 15%")
+}
+else if (ventas < 5){
+    console.log("Tu comisión es de 5%")
 }
